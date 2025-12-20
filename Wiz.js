@@ -66,7 +66,6 @@ const CONFIG = {
   RETRY_ATTEMPTS: 3,
   RETRY_DELAY: 2000,
   REQUEST_TIMEOUT: 30000,
-  DEV_LINK: 'https://www.facebook.com/jhames.rhonnielle.martin'
 };
 
 const header = {
@@ -130,7 +129,7 @@ const bootAnimation = async () => {
     `${colors.green}[SYSTEM]${colors.reset} Checking Environment...`,
     `${colors.green}[NETWORK]${colors.reset} Connecting to API endpoints...`,
     `${colors.green}[SECURITY]${colors.reset} Bypassing headers...`,
-    `${colors.neonBlue}[COMPLETE]${colors.reset} Launching JTOOL v1...`
+    `${colors.neonBlue}[COMPLETE]${colors.reset} Launching WizTool v1...`
   ];
 
   for (const task of tasks) {
@@ -338,4 +337,5 @@ const mainMenu = async () => {
 mainMenu().catch(err => {
   console.error(err);
   process.exit(1);
+
 });
